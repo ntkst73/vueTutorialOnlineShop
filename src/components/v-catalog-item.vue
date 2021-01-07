@@ -31,13 +31,11 @@ export default {
   computed: {},
   methods: {
     addToCart() {
-      this.$emit('addToCart', this.product_data);
+      this.$emit("addToCart", this.product_data);
     },
   },
   watch: {},
-  mounted() {
-    
-  },
+  mounted() {},
 };
 </script>
 
@@ -46,7 +44,7 @@ export default {
   flex-basis: 25%;
   box-shadow: 0 0 8px 0 #e0e0e0;
   padding: $padding * 2;
-  margin-top: $margin * 2;
+  margin-bottom: $margin * 2;
 
   &__image {
     width: 100px;
